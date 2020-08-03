@@ -74,6 +74,7 @@ model.save(save_folder_path)
 
 with open(os.path.join(save_folder_path, 'tags_vectorizer.pkl'), 'wb') as handle:
     pickle.dump(tags_vectorizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
+    print('tags_vectorizer.pkl created')
 with open(os.path.join(save_folder_path, 'intents_label_encoder.pkl'), 'wb') as handle:
     pickle.dump(intents_label_encoder, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
